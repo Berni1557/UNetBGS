@@ -1,4 +1,11 @@
 # BGDLModel.py
+import os
+import sys
+#fileDir = os.path.dirname(os.path.abspath(__file__))
+#sys.path.append(fileDir + '\\unet')
+
+sys.path.append('H:/Projects/SearchPartPython/SearchPartPython/SearchPart/src/SearchPart/unet')
+
 import cv2
 import numpy as np
 from BGDataGenerator import BGDataProvider
@@ -196,7 +203,7 @@ class UNetBGS(object):
 if __name__ == '__main__':
     
     #from TrainModel import DLModel
-    model = DLModel()
+    model = UNetBGS()
     image = cv2.imread('H:/Projects/SearchPartPython/SearchPartPython/SearchPart/data/background/SAM_0703.JPG')
     width_crop = 532
     height_crop = 532

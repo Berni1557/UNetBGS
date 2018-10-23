@@ -2,8 +2,8 @@
 
 ## General description
 
-This is a library provides a tensorFlow based UNet for background Segmentation
-It was developed to segment electronic parts from circuit board background.
+This is a library provides a TensorFlow based UNet for Background Segmentation
+It was developed to segment electronic parts on circuit boards.
 
 ## Versions
 
@@ -26,12 +26,17 @@ It was developed to segment electronic parts from circuit board background.
 
 ### Full installation based on conda
 
-- Install conda: https://conda.io/docs/user-guide/install/windows.html
-- Create python local environment: '''conda create -n env_UNetBGS python=3.4'''
-- Activate environmen: activate env_UNetBGS
-- Install OpenCV3: '''conda install -c conda-forge opencv '''
-- Install TensorFlow: '''conda install -c conda-forge tensorflow '''
-- Install Spyder: '''conda install -c anaconda spyder''' (Optional)
+- conda create -n env_UNET python=3.6
+- activate env_UNET
+- conda install -c anaconda spyder
+- conda install -c conda-forge opencv
+- conda install -c anaconda pyqt
+- conda install -c conda-forge tensorflow
+- conda install -c anaconda scipy 
+- conda install -c anaconda pillow
+- conda install -c conda-forge matplotlib
+
+- conda install -c anaconda pyqt
 
 If you get the following error :
 "An HTTP error occurred when trying to retrieve this URL.
@@ -64,16 +69,16 @@ https://github.com/Berni1557/UNetBGS.git
 
 ## User documentation
 
-If the doxygen docu was build, the docu should be here: [Docu](html\index.html)
-You can build doxygen documentation easily by running CMake. Select your prefered generator (tested with VS2012) and compile the DOCUMENTATION project.
+If the doxygen docu was build, the docu should be here: [Docu](html\index.html).
+
+You can build doxygen documentation easily by running CMake. 
+There might be the following error: "CMake Error: CMake can not determine linker language for target: UNetBGS" which can be ignored.
+Select your prefered generator (tested with VS2012) and compile the DOCUMENTATION project.
 The documentation should be in your build folder. Open html/index.html in your browser to see the documentation.
-[Create docu](doc/doc01.PNG)
-
-
+![Create docu](doc/doc01.PNG)
 
 ## Developers
 
--	Bernhard Föllmer, bernicvision@posteo.de
-
+-	Bernhard Föllmer, berniweb@posteo.de
 
 ----------------------------
